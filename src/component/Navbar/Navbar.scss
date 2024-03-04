@@ -1,0 +1,95 @@
+@import '../../styles/_mixin.scss';
+
+.navbar {
+
+    &_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    &_logo {
+        font-size: 25px;
+        font-weight: 600;
+        cursor: pointer;
+
+        a {
+            color: #000;
+
+            &:hover {
+                color: #817a7a9f;
+            }
+        }
+
+        @include mobile {
+            font-size: 20px;
+        }
+
+
+    }
+
+    &_menu {
+        display: flex;
+        gap: 30px;
+
+        @include mobile {
+            display: none;
+        }
+
+        a {
+            color: rgb(117, 116, 116);
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &_menumobile {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &_social {
+        display: flex;
+        gap: 30px;
+
+        .icon {
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+}
+
+
+@include mobile {
+    .navbar_menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #f8f0f9;
+        padding: 20px 10px;
+        z-index: 1;
+        transform: translateX(0%);
+        opacity: 1;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .navbar_menu.show {
+        display: block;
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+
+
+
+
+}

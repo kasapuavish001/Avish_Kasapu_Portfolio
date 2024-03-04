@@ -1,0 +1,121 @@
+@import '../../styles/_mixin.scss';
+
+.banner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 25px;
+    }
+
+    &_main {
+        font-size: 20px;
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+
+    &_text {
+        color: #0d0c21;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 10px 0;
+
+        @include mobile {
+            font-size: 28px;
+        }
+
+        @include sm {
+            font-size: 28px;
+        }
+    }
+
+    &_subtext {
+        font-size: 18px;
+        color: #7d4884;
+    }
+
+    &_imageblock {
+        position: relative;
+        width: 40%;
+
+        @include mobile {
+            width: 70%;
+        }
+    }
+
+    &_image {
+
+
+        @include mobile {
+            width: 320px;
+            height: 320px;
+            margin-left: -10px;
+        }
+
+
+        @include tiny {
+            width: 280px;
+            height: 280px;
+            margin-left: -50px;
+        }
+    }
+
+    &_scroll {
+
+        text-align: center;
+        height: 50px;
+        color: #b6bfb6;
+
+        .icon {
+            padding: 10px;
+            border: 2px solid #b6bfb6;
+            border-radius: 50%;
+        }
+    }
+
+    .second {
+        width: 100px;
+        height: 100px;
+        top: 120px;
+        left: 280px;
+
+        @include mobile {
+            width: 70px;
+            height: 70px;
+            top: 60px;
+            left: 270px;
+        }
+
+    }
+}
+
+
+/*blod text*/
+
+.boldtext {
+    color: #0d0c21;
+    font-weight: 600;
+}
+
+
+
+/*card block */
+
+.cardblock {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
