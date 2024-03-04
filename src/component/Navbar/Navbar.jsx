@@ -1,7 +1,7 @@
 
 import { AppstoreFilled } from '@ant-design/icons';
 import { useState } from 'react';
-import resume from '../../assests/images/pdf/Avish_Kasapu_.pdf';
+import resume from '../../assests/images/pdf/Avish_kasapu..pdf';
 import './Navbar.scss';
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(true);
