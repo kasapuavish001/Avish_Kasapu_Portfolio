@@ -85,7 +85,6 @@ const About = () => {
                         <p className="about_lighttext"><a href="https://www.linkedin.com/in/kasapu-avish-011001237/">linkedin</a></p>
                     </div>
                 </motion.div>
-
                 <motion.div className="about_imageblock"
                     animate={{ y: [0, -20, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
