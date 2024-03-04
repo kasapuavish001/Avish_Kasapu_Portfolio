@@ -1,5 +1,5 @@
 
-import { MenuOutlined } from '@ant-design/icons';
+import { AppstoreFilled } from '@ant-design/icons';
 import { useState } from 'react';
 import resume from '../../assests/images/pdf/Avish_Kasapu_.pdf';
 import './Navbar.scss';
@@ -36,11 +36,11 @@ const Navbar = () => {
                 </p>
                 <ul className={`navbar_menu ${showMenu ? 'show' : ''} `}>
                     {data.map((each, i) => {
-                        return <li key={i} onClick={() => { setShowMenu(!showMenu) }}><a href={each.link}>{each.name}</a></li>
+                        return <li key={i}><a href={each.link} onClick={() => { setShowMenu(!showMenu) }}>{each.name}</a></li>
                     })}
                 </ul>
                 <div className="navbar_menumobile">
-                    <button className='navbar_btn' onClick={() => { setShowMenu(!showMenu) }}> <MenuOutlined /></button>
+                    <button className='navbar_btn' onClick={() => { setShowMenu(!showMenu) }}> <AppstoreFilled className='icon' /></button>
                 </div>
 
             </div>
