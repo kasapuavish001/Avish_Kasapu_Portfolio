@@ -39,7 +39,7 @@ const Banner = () => {
             It was compatible with smartphones, tablets, and Laptop and Computers , related it the company’s Operations and industry 
             trends. `,
             githublink: "https://github.com/AvishKasapu/FastKart ",
-            hostlink: "https://fast-kart-by-avish-90cwduy8q-kasapuavish001s-projects.vercel.app/",
+            hostlink: "https://fastkart-by-avish.vercel.app/",
         },
         {
             id: 2,
