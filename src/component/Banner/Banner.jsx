@@ -84,7 +84,6 @@ const Banner = () => {
                             I’m a <span className="boldtext">full stack developer</span> from India. I’m always <span className="boldtext">curious to learn</span> more when it comes to new technologies and creative coding.
                         </motion.p>
                     </div>
-
                     <motion.div className="banner_imageblock"
                         initial={{ opacity: 0, y: 50 }}
                         animate={bannerControls}
